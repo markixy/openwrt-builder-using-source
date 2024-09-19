@@ -1,6 +1,6 @@
 
 
-name: OpenWrt Config Generator
+name: build-like-official
 
 on:
   repository_dispatch:
