@@ -25,11 +25,8 @@ jobs:
         sudo -E apt-get -qq update
         sudo -E apt-get -qq install git
         sudo timedatectl set-timezone "$TZ"
-        sudo mkdir -p /workdir
-        sudo chown $USER:$GROUPS /workdir
 
     - name: Clone source code
-      working-directory: /workdir
       run: |
         git config --global advice.detachedhead false
         git clone --branch $REPO_BRANCH --depth=1 $REPO_URL  openwrt
