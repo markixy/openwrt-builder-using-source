@@ -69,7 +69,7 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P2_SH
 
     - name: SSH connection to Actions
-      uses: p3terx/debugger-action@master
+      uses: P3TERX/ssh2actions@main
 
     - name: Print Menuconfig
       run: |
