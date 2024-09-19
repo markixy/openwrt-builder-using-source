@@ -30,7 +30,9 @@ jobs:
 
     - name: Clone source code
       working-directory: /workdir
-      run: git clone --branch $REPO_BRANCH --depth=1 $REPO_URL  openwrt
+      run: |
+        git config --global advice.detachedhead false
+        git clone --branch $REPO_BRANCH --depth=1 $REPO_URL  openwrt
 
     - name: Initialization environment2
       env:
