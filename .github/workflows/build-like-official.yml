@@ -8,7 +8,7 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt.git
-  REPO_BRANCH: v18.06.1
+  REPO_BRANCH: v18.06.9
   TZ: Asia/Shanghai
 
 jobs:
