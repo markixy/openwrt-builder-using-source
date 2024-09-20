@@ -8,7 +8,7 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt.git
-  REPO_BRANCH: v18.06.4
+  REPO_BRANCH: v18.06.1
   TZ: Asia/Shanghai
 
 jobs:
@@ -46,7 +46,7 @@ jobs:
     - name: Using Official Config
       run: |
         cd openwrt
-        wget https://mirror-03.infra.openwrt.org/releases/18.06.4/targets/ar71xx/tiny/config.seed -O .config
+        wget https://mirror-03.infra.openwrt.org/releases/18.06.1/targets/ar71xx/tiny/config.seed -O .config
         make defconfig
 
     - name: Compile
